@@ -21,8 +21,8 @@ limit 3;
 
 
 /* Q4 Which city has best customers? We would like to throw a promotional music festival in city we made the most money. 
-	  Write a querry that returns one city that has the highest sum of invoices totals. 
-	  Return both city name and sum of all invoices totals */
+      Write a querry that returns one city that has the highest sum of invoices totals. 
+      Return both city name and sum of all invoices totals */
 
 select billing_city,
 round(sum(total),2) as Sum_of_invoice_total
@@ -33,7 +33,7 @@ limit 1;
 
 
 /* Q5 Who is the best customer? The customer who has spent most will be declared as best customer
-	  Write a querry that returns the person who has spent the most money */
+      Write a querry that returns the person who has spent the most money */
 
 select c.customer_id,
 c.first_name,
@@ -48,7 +48,7 @@ limit 1;
 
 
 /* Q6 Write querry to return email, first name, last name and genre of all rock music listeners.
-	  Return your list ordered alphabetically by email sorting with A */
+      Return your list ordered alphabetically by email sorting with A */
 
 SELECT c.email as customer_email,c.first_name,c.last_name,g.name
 FROM track t
@@ -65,8 +65,8 @@ order by customer_email;
 
 
 /* Q7 Return all track names that have a song length longer than avg song length
-	  Return the name and millisecond for each track
-	  Order by song length with the longest songs listed first */
+      Return the name and millisecond for each track
+      Order by song length with the longest songs listed first */
 
 SELECT name,
 milliseconds from track
